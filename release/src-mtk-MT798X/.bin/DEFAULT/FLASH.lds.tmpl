@@ -1,0 +1,14 @@
+SECTIONS
+{
+  .bootloader @BOOTLOADER_BASE@ :
+  {
+    bootloader_begin = .;
+    @BOOTLOADER@
+  }
+
+  .ubi_dev @UBI_DEV_BASE@ :
+  {
+    ubi_dev_begin = .;
+    @UBI_DEV@
+  }
+}

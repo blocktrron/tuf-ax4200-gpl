@@ -1,0 +1,38 @@
+[nvram volume]
+mode=ubi
+vol_id=0
+vol_size=@NVRAM_SIZE@KiB
+vol_type=dynamic
+vol_name=nvram
+
+[Factory volume]
+mode=ubi
+image=@FACTORY@
+vol_id=1
+vol_size=@FACTORY_SIZE@KiB
+vol_type=dynamic
+vol_name=Factory
+
+[Factory2 volume]
+mode=ubi
+image=@FACTORY@
+vol_id=2
+vol_size=@FACTORY_SIZE@KiB
+vol_type=dynamic
+vol_name=Factory2
+
+[linux volume]
+mode=ubi
+image=@TRX@
+vol_id=3
+vol_size=@LINUX_SIZE@KiB
+vol_type=dynamic
+vol_name=linux
+
+[jffs volume]
+mode=ubi
+vol_id=4
+vol_size=@JFFS_SIZE@KiB
+vol_type=dynamic
+vol_name=jffs2
+vol_flags=autoresize

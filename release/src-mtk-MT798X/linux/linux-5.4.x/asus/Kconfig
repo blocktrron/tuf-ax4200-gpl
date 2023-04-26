@@ -1,0 +1,25 @@
+choice
+	prompt "Choose Product"
+	help
+	   Choose specific product for different hardware layout
+
+config PANTHERA
+	bool "Panther porting on PantherA RFB"
+
+config PANTHERB
+	bool "Panther porting on PantherB RFB"
+
+config CHEETAH
+	bool "Cheetah porting on Cheetah RFB"
+
+config TUFAX4200
+	bool "Panther TUF-AX4200/TUF-AX4200Q"
+
+config TUFAX6000
+	bool "Panther TUF-AX6000"
+
+config RTAX59U
+	bool "Panther RT-AX59U"
+
+endchoice
+

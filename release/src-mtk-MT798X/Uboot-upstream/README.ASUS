@@ -1,0 +1,23 @@
+TUF-AX4200
+==========
+
+1. Install toolchain in accordance with ../../../README.TXT
+2. Run "cp -f config-TUF-AX4200 .config"
+3. Run "make"
+4. Load u-boot_nand.img to TUF-AX4200
+
+TUF-AX6000
+==========
+
+1. Install toolchain in accordance with ../../../README.TXT
+2. Run "cp -f config-TUF-AX6000 .config"
+3. Run "make"
+4. Load u-boot_nand.img to TUF-AX6000
+
+RT-AX59U
+==========
+
+1. Install toolchain in accordance with ../../../README.TXT
+2. Run "cp -f config-RT-AX59U .config"
+3. Run "make"
+4. Load u-boot_nand.img to RT-AX59U

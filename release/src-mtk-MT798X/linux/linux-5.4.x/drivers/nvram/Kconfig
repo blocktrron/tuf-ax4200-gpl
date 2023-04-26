@@ -1,0 +1,14 @@
+menu "ASUS NVRAM"
+
+config	ASUS_NVRAM_API
+	tristate "ASUS NVRAM R/W API"
+	default m
+	---help---
+	ASUS NVRAM R/W API
+
+config NVRAM_SIZE
+	hex "Specify nvram size on MT798X platform "
+	depends on ASUS_NVRAM_API
+	default 0x10000
+
+endmenu
